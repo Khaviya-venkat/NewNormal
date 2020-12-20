@@ -1,0 +1,43 @@
+<%- include("partials/headerforall")%>
+
+<div id="courses_allcards">
+	<% for(var i=0; i<courses.length; i++){ %>
+		<div class="card" id="courses_card">
+		  <img src="<%= courses[i].Img %>" id="courses_card_img" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h5 class="card-title"><%= courses[i].Title %></h5>
+			  
+			  <% if(courses[i].Desc.length > 30){ %>
+					<p class="card-text" id="courses_card_desc" style="height:45px; overflow:hidden"><%= courses[i].Desc %></p>
+				 	<span id="three_dots">...</span> 
+			  		<br>
+			  <% } %>
+			  
+			  <% if(courses[i].Desc.length <= 30){ %>
+			  <p class="card-text" id="card_desc"><%= courses[i].Desc %></p>
+			  <% } %>
+			  
+			<a href="/course/<%= courses[i]._id %>" id="courses_view_course" class="btn btn-primary">View Course</a>
+		  </div>
+		</div>
+	<% } %>
+</div>
+
+<script>
+	var threedots = document.querySelector("#courses_three_dots");
+	threedots.addEventListener("click", function(){
+		threedots.style.cssText= "height: 70px; overflow: visible";
+	});
+</script>
+
+<div id="courses_trademarkset">
+	<p id="tradeMark">
+		Trademark NewNormal 2020. All Rights Reserved
+	</p>
+	<!-- <p id="createdBy">
+		BY KD
+	</p> -->
+</div>
+<script src="/js/fade.ejs"></script>
+</body>
+</html>

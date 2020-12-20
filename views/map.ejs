@@ -1,0 +1,67 @@
+<%- include ("partials/headerforall") %>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+
+<div id='map'></div>
+<div>
+	
+</div>
+
+<script>
+
+	mapboxgl.accessToken = 'pk.eyJ1Ijoia2hhdml5YSIsImEiOiJja2NyMmRpdzUxYWp6MnJsZjJtbXMwbWtkIn0.HV1nNmoLHtVa9oC0-gbjAg';
+	var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+	center: [12, 35], // starting position [lng, lat]
+	zoom: 1.1  // starting zoom
+	});
+
+	var marker_india = new mapboxgl.Marker()
+	.setLngLat([80.2, 11.06])
+	.addTo(map);
+	
+	var marker_uae = new mapboxgl.Marker()
+	.setLngLat([54.3, 24.4])
+	.addTo(map);
+	
+	var marker_singapore = new mapboxgl.Marker()
+	.setLngLat([101, 1.5])
+	.addTo(map);
+	
+	var marker_france = new mapboxgl.Marker()
+	.setLngLat([2, 47])
+	.addTo(map);
+	
+	var marker_california = new mapboxgl.Marker()
+	.setLngLat([-119, 36])
+	.addTo(map);
+	
+	var marker_london = new mapboxgl.Marker()
+	.setLngLat([0, 51])
+	.addTo(map);
+	
+	var marker_ny = new mapboxgl.Marker()
+	.setLngLat([-75.9, 40.7])
+	.addTo(map);
+	
+	var marker_canada = new mapboxgl.Marker()
+	.setLngLat([-106, 56])
+	.addTo(map);
+	
+	var marker_china = new mapboxgl.Marker()
+	.setLngLat([103, 35])
+	.addTo(map);
+	
+	var marker_japan = new mapboxgl.Marker()
+	.setLngLat([136, 35])
+	.addTo(map);
+	
+</script>
+	
+ 
+</body>
+</html>

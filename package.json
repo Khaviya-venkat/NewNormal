@@ -1,0 +1,27 @@
+{
+  "name": "newnormal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khaviya and Dhanush",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "coffee-script": "^1.12.7",
+    "connect": "^3.7.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express.io": "^1.1.13",
+    "mongoose": "^5.10.15",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "webrtc-adapter": "^7.7.0"
+  }
+}

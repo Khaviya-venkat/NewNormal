@@ -1,0 +1,38 @@
+<%- include ("partials/headerforall") %>
+
+<div id="gallery_tabs">
+	<ul class="nav nav-tabs">
+	    <li class="nav-item">
+			<a class="nav-link<%if(topic==="workforce"){%> active <%}%>"  href="/gallery/workforce">Workforce</a>
+	    </li>
+	    <li class="nav-item">
+			<a class="nav-link<%if(topic==="education"){%> active <%}%>" href="/gallery/education">Education</a>
+	    </li>
+	    <li class="nav-item">
+			<a class="nav-link<%if(topic==="medical"){%> active <%}%>" href="/gallery/medical">Healthcare</a>
+	    </li>
+	    <li class="nav-item">
+			<a class="nav-link<%if(topic==="unemployment"){%> active <%}%>" href="/gallery/unemployment">Job Opportunities</a>
+	    </li>
+	</ul>
+</div>
+
+<div id="gallery_allimgs">
+	<% gallery.forEach(function(img){ %>
+		<div>
+			<img id="gallery_img" src="<%= img.Url %>">
+		</div>
+	<% }); %>
+</div>
+
+<div id="gallery_trademarkset">
+	<p id="tradeMark">
+		Trademark NewNormal 2020. All Rights Reserved
+	</p>
+	<!-- <p id="createdBy">
+		BY KD
+	</p> -->
+</div>
+<script src="/js/fade.ejs"></script>
+</body>
+</html>

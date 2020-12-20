@@ -1,0 +1,59 @@
+<%- include("partials/headerforall")%>
+
+<div id="news_tabs">
+	<ul class="nav nav-tabs">
+	    <li class="nav-item">
+			<a class="nav-link<%if(topic==="world"){%> active <%}%>"  href="/news/world">World</a>
+	    </li>
+	    <li class="nav-item">
+			<a class="nav-link<%if(topic==="technology"){%> active <%}%>" href="/news/technology">Technology</a>
+	    </li>
+	    <li class="nav-item">
+			<a class="nav-link<%if(topic==="business"){%> active <%}%>" href="/news/business">Business</a>
+	    </li>
+	    <li class="nav-item">
+			<a class="nav-link<%if(topic==="corona"){%> active <%}%>" href="/news/corona">Corona</a>
+	    </li>
+		<li class="nav-item">
+			<a class="nav-link<%if(topic==="sport"){%> active <%}%>" href="/news/sport">Sports</a>
+		</li>
+	</ul>
+</div>
+
+<div id="news_articles">
+	<% news.articles.forEach(function(news_article){ %>
+	<div id="news_article">
+		<div>
+			<p id="news_article_title">
+				<%= news_article.title %>
+			</p>
+			<p id="news_article_source">
+				Source: <%= news_article.source.name %>
+			</p>
+			<br>
+			<br>
+			<p id="news_article_publishedat">
+				Published On: <%= news_article.publishedAt %>
+			</p>
+			<br>
+			<br>
+			<img id="news_article_img" src="<%= news_article.urlToImage%>">
+			<p id="news_article_description">
+				<%= news_article.description%>
+			</p>
+		</div>
+	</div>	
+	<% }) %>
+</div>
+
+<div id="news_trademarkset">
+	<p id="tradeMark">
+		Trademark NewNormal 2020. All Rights Reserved
+	</p>
+	<!-- <p id="createdBy">
+		BY KD
+	</p> -->
+</div>
+<script src="/js/fade.ejs"></script>
+</body>
+</html>

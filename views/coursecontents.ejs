@@ -1,0 +1,34 @@
+<%- include("partials/headerforall")%>
+
+<div id="course_contents_head">
+	<h3 id="course_contents_title">
+		<%= course.Title %>
+	</h3>
+	<p id="course_contents_desc"><%= course.Desc %></p>
+	<img id="course_contents_img" src="<%= course.Img %>">
+</div>
+
+<div id="course_contents_allcards">
+	<% course.Content.forEach(function(course){ %>
+		<div class="card" id="course_contents_card">
+		  <div class="card-body">
+			<h5 class="card-title"><%= course.Title %></h5>
+			<p class="card-text"><%= course.Desc %></p>
+			<a href="#" class="btn btn-primary" id="course_contents_open_button">Open</a>
+		  </div>
+		</div> 
+	<% }); %>
+	 
+</div>
+
+<div id="course_contents_trademark">
+	<p id="tradeMark">
+		Trademark NewNormal 2020. All Rights Reserved
+	</p>
+	<!-- <p id="createdBy">
+		BY KD
+	</p> -->
+</div>
+<script src="/js/fade.ejs"></script>
+</body>
+</html>

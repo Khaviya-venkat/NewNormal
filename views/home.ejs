@@ -1,0 +1,58 @@
+<%- include("partials/headerforall")%>
+
+<!-- <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div id="signin_box">
+	<img id="signin_img" src="https://www.moneycrashers.com/wp-content/uploads/2011/06/man-working-from-home-laptop-phone-1068x713.jpg">
+	<span id="signin_inside_img">Make the World a Better Place by Contributing</span>
+	
+	<div id="signin_form_box">
+		
+		<span id="signin_login">Login</span>
+		<form id="signin_form" action="/login" method="POST">
+			<input class="signin_inputs" type="text" name="username" placeholder="Username">
+			<p>
+				<input type="password" class="signin_inputs" id="name" name="password" placeholder="Password">
+			</p>
+
+			  <!-- <p id="radiobuttons">
+				 <input type="radio" class="radio" id="user" name="loginas" value="user">
+				  <label for="user">User</label><br>
+				  <input type="radio" class="radio" id="deliveryservice" name="loginas" value="deliveryservice">
+				  <label for="deliveryservice">Delivery Service</label><br> 
+			  </p> -->
+
+			<button id="signin_button">
+				Login
+			</button>	  
+	    </form>  
+		<p id="signin_signupline">
+			Don't have an account?<a href="/signup" id="signup"> Sign Up!</a>
+		</p>
+	</div>
+	
+</div>
+
+<div id="home_trademarkset">
+	<p id="tradeMark">
+		Trademark NewNormal 2020. All Rights Reserved
+	</p>
+	<!-- <p id="createdBy">
+		BY KD
+	</p> -->
+</div>
+<script src="/js/fade.ejs"></script>
+</body>
+</html>

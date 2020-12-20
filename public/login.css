@@ -1,0 +1,49 @@
+h3{
+	font-size: 36px;
+	/* font-family: Architects Daughter; */
+	margin-top: 100px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form{
+	padding-left: 34.7%;
+}
+
+input{
+	width: 45%;
+	height: 35px;
+	display: inline-block;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	background-color: #cccccc;
+	margin-bottom: 5px;
+	padding-left: 20px;
+}
+
+button{
+	color: black;
+	width: 45%;
+	height: 40px;
+	background-color: #999999;
+	border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signupline{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#signup{
+	text-decoration: underline;
+	color: black;
+}
+
+#trademarkset{
+	text-align: center;
+	margin-top: 345px;
+}

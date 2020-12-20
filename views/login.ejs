@@ -1,0 +1,31 @@
+<%- include("partials/header")%>
+
+<link href='login.css' rel="stylesheet" type="text/css">
+
+<h3>
+	Login
+</h3>
+  <form action="/login" method="POST">
+    <input type="text" name="username" placeholder="Username">
+	<p>
+		<input type="password" id="name" name="password" placeholder="Password">
+	</p>
+
+	  <!-- <p id="radiobuttons">
+		 <input type="radio" class="radio" id="user" name="loginas" value="user">
+		  <label for="user">User</label><br>
+		  <input type="radio" class="radio" id="deliveryservice" name="loginas" value="deliveryservice">
+		  <label for="deliveryservice">Delivery Service</label><br> 
+	  </p> -->
+	  
+    <button>
+		Login
+	</button>	  
+
+  </form>
+
+<p id="signupline">
+	Don't have an account?<a href="/signup" id="signup"> Sign Up!</a>
+</p>
+
+<%- include("partials/footer")%>

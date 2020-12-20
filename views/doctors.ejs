@@ -1,0 +1,31 @@
+<%- include("partials/headerforall")%>
+
+<div id="doctor_table">
+	<table>
+		<tr>
+			<th class="doc_table_head">Name</th>
+			<th class="doc_table_head">Qualifications</th>
+			<th class="doc_table_head">Department</th>
+		</tr>
+		<%doctor.forEach(function(doctors){%>
+		<tr>
+			<td><%=doctors.username %></td>
+			<td><%= doctors.doctor.qualification %></td>
+			<td><%= doctors.doctor.department %></td>
+			<td><%= doctors.email%></td>
+		</tr>
+		<%})%>
+	</table>
+</div>
+
+<div id="doctors_trademarkset">
+	<p id="tradeMark">
+		Trademark NewNormal 2020. All Rights Reserved
+	</p>
+	<!-- <p id="createdBy">
+		BY KD
+	</p> -->
+</div>
+<script src="/js/fade.ejs"></script>
+</body>
+</html>

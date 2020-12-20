@@ -1,0 +1,25 @@
+<%- include("partials/headerforall") %>
+
+<div id="welcome_content">
+	<% if(login===true){ %>
+		<span id="welcome_greeting_the_user">Welcome <%= user.username %> . . .</span>
+	<% } %>
+	<p id="welcome_img_centering">
+		<img id="welcome_img" src="https://www.nist.gov/sites/default/files/images/2020/07/13/new-normal-re2st3.jpg">	
+	</p>
+	<p id="welcome_para">
+		NewNormal attempts to enhance lives, by providing top tier Education, Medical care and Employment facilities to those in need. By acting as a bridge between those ready to help and those needing assistance, NewNormal targets developing an uninterrupted way of life for the affected during this pandemic. By "World from Home", we aim at providing admittance to all our facilities and services with a rationale to serve the society.
+	</p>
+</div>
+
+<div id="welcome_trademarkset">
+	<p id="tradeMark">
+		Trademark NewNormal 2020. All Rights Reserved
+	</p>
+	<!-- <p id="createdBy">
+		BY KD
+	</p> -->
+</div>
+<script src="/js/fade.ejs"></script>
+</body>
+</html>

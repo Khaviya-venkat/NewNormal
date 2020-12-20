@@ -1,0 +1,47 @@
+<%- include ("partials/headerforall") %>
+
+<p class="create_link_para">
+	There are a Few Steps to Connect you to The Call . . .
+</p>
+<p class="create_link_para">
+	Firstly, Create a Link !
+</p>
+<p id="create_link_button_para">
+	
+		<button id="create_link_button">
+			Create Link
+		</button>
+	
+</p>
+
+<p id="link_for_copying">
+	Share the link: http://localhost:3000/callarea/<%= url  %>
+</p>
+
+<p id="share_link_button_para">
+	<a href="/callarea/<%= url%>">
+		<button id="share_link_button">
+			Hop Into The Meeting
+		</button>
+	</a>
+</p>
+
+<div id="create_link_trademarkset">
+	<p id="tradeMark">
+		Trademark NewNormal 2020. All Rights Reserved
+	</p>
+	<!-- <p id="createdBy">
+		BY KD
+	</p> -->
+</div>
+<script >
+	  document.getElementById("link_for_copying").style.opacity = 0;
+	  document.getElementById("share_link_button_para").style.opacity = 0;
+  document.getElementById("create_link_button").addEventListener("click",function(){
+	  document.getElementById("link_for_copying").style.opacity = 1;
+	  document.getElementById("share_link_button_para").style.opacity = 1;
+	  
+  })
+</script>
+</body>
+</html>
